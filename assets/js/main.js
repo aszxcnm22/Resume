@@ -227,3 +227,45 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+
+/**
+ * Lightweight EN/TH language toggle for curated resume content.
+ */
+(function() {
+  const languageButtons = document.querySelectorAll('[data-lang-select]');
+  const translatableNodes = document.querySelectorAll('[data-en][data-th]');
+
+  if (!languageButtons.length || !translatableNodes.length) {
+    return;
+  }
+
+  function applyLanguage(language) {
+    const activeLanguage = language === 'th' ? 'th' : 'en';
+
+    document.documentElement.lang = activeLanguage === 'th' ? 'th' : 'en';
+    document.body.dataset.lang = activeLanguage;
+
+    translatableNodes.forEach((node) => {
+      const value = node.dataset[activeLanguage];
+      if (typeof value === 'string') {
+        node.innerHTML = value;
+      }
+    });
+
+    languageButtons.forEach((button) => {
+      const isActive = button.dataset.langSelect === activeLanguage;
+      button.classList.toggle('is-active', isActive);
+      button.setAttribute('aria-pressed', String(isActive));
+    });
+
+    localStorage.setItem('portfolio-language', activeLanguage);
+  }
+
+  languageButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+      applyLanguage(button.dataset.langSelect);
+    });
+  });
+
+  applyLanguage(localStorage.getItem('portfolio-language') || 'en');
+})();

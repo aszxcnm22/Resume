@@ -26,10 +26,14 @@
 <body class="index-page hr-page">
 
   <i class="header-toggle d-xl-none bi bi-list"></i>
+  <div class="language-switch" aria-label="Language switcher">
+    <button type="button" data-lang-select="en" aria-pressed="true">EN</button>
+    <button type="button" data-lang-select="th" aria-pressed="false">TH</button>
+  </div>
 
   <header id="header" class="header dark-background d-flex flex-column">
     <div class="profile-img">
-      <img src="assets/img/www.jpg" alt="Phisit Katongtung" class="img-fluid rounded-circle">
+      <img src="assets/img/1778346359836-0375e255-Phisit-Katongtung.jpg" alt="Phisit Katongtung" class="img-fluid rounded-circle">
     </div>
 
     <a href="index.html" class="logo d-flex align-items-center justify-content-center">
@@ -47,13 +51,15 @@
 
     <nav id="navmenu" class="navmenu">
       <ul>
-        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
-        <li><a href="#about"><i class="bi bi-person navicon"></i>About</a></li>
-        <li><a href="#skills"><i class="bi bi-graph-up navicon"></i>Skills</a></li>
-        <li><a href="#experience"><i class="bi bi-briefcase navicon"></i>Experience</a></li>
-        <li><a href="#projects"><i class="bi bi-cpu navicon"></i>Projects</a></li>
-        <li><a href="#portfolio"><i class="bi bi-images navicon"></i>Portfolio</a></li>
-        <li><a href="#footer"><i class="bi bi-send navicon"></i>Contact</a></li>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i><span data-en="Home" data-th="หน้าแรก">Home</span></a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i><span data-en="About" data-th="เกี่ยวกับ">About</span></a></li>
+        <li><a href="#skills"><i class="bi bi-graph-up navicon"></i><span data-en="Skills" data-th="ทักษะ">Skills</span></a></li>
+        <li><a href="#credentials"><i class="bi bi-patch-check navicon"></i><span data-en="Credentials" data-th="ใบรับรอง">Credentials</span></a></li>
+        <li><a href="#experience"><i class="bi bi-briefcase navicon"></i><span data-en="Experience" data-th="ประสบการณ์">Experience</span></a></li>
+        <li><a href="#ai-camp"><i class="bi bi-trophy navicon"></i><span data-en="AI Camp" data-th="AI Camp">AI Camp</span></a></li>
+        <li><a href="#projects"><i class="bi bi-cpu navicon"></i><span data-en="Projects" data-th="โปรเจกต์">Projects</span></a></li>
+        <li><a href="#portfolio"><i class="bi bi-images navicon"></i><span data-en="Portfolio" data-th="ผลงาน">Portfolio</span></a></li>
+        <li><a href="#footer"><i class="bi bi-send navicon"></i><span data-en="Contact" data-th="ติดต่อ">Contact</span></a></li>
       </ul>
     </nav>
   </header>
@@ -66,22 +72,22 @@
       <div class="container">
         <div class="hero-layout">
           <div class="hero-copy" data-aos="fade-up">
-            <span class="hero-eyebrow"><i class="bi bi-stars"></i> Resume Portfolio</span>
+            <span class="hero-eyebrow"><i class="bi bi-stars"></i> <span data-en="Resume Portfolio" data-th="เรซูเม่และพอร์ตโฟลิโอ">Resume Portfolio</span></span>
             <h2>Phisit Katongtung</h2>
-            <p>AI Engineer & Web Developer focused on <span class="desktop-focus">Machine Learning, Computer Vision, and Web Applications.</span><span class="mobile-focus">Machine Learning, Computer Vision<br>and Web Applications.</span></p>
+            <p data-en='AI Engineer &amp; Web Developer focused on <span class="desktop-focus">Machine Learning, Computer Vision, and Web Applications.</span><span class="mobile-focus">Machine Learning, Computer Vision<br>and Web Applications.</span>' data-th='AI Engineer &amp; Web Developer ที่โฟกัสด้าน <span class="desktop-focus">Machine Learning, Computer Vision และ Web Applications.</span><span class="mobile-focus">Machine Learning, Computer Vision<br>และ Web Applications.</span>'>AI Engineer & Web Developer focused on <span class="desktop-focus">Machine Learning, Computer Vision, and Web Applications.</span><span class="mobile-focus">Machine Learning, Computer Vision<br>and Web Applications.</span></p>
 
             <div class="hero-actions">
-              <a href="#projects" class="btn-primary-modern"><i class="bi bi-kanban"></i>View Projects</a>
-              <a href="mailto:phisitkatongtung@gmail.com" class="btn-ghost-modern"><i class="bi bi-envelope"></i>Contact Me</a>
+              <a href="#projects" class="btn-primary-modern"><i class="bi bi-kanban"></i><span data-en="View Projects" data-th="ดูโปรเจกต์">View Projects</span></a>
+              <a href="mailto:phisitkatongtung@gmail.com" class="btn-ghost-modern"><i class="bi bi-envelope"></i><span data-en="Contact Me" data-th="ติดต่อฉัน">Contact Me</span></a>
             </div>
           </div>
 
           <aside class="hero-summary-card" data-aos="fade-left" data-aos-delay="120">
-            <img src="assets/img/www.jpg" alt="Portrait of Phisit Katongtung">
+            <img src="assets/img/1778346359836-0375e255-Phisit-Katongtung.jpg" alt="Portrait of Phisit Katongtung">
             <div>
-              <span>Open to opportunities</span>
-              <h3>4th-year Data Science student</h3>
-              <p>University of Phayao, Thailand</p>
+              <span data-en="Open to opportunities" data-th="พร้อมรับโอกาสใหม่">Open to opportunities</span>
+              <h3 data-en="4th-year Data Science student" data-th="นิสิตชั้นปีที่ 4 สาขา Data Science">4th-year Data Science student</h3>
+              <p data-en="University of Phayao, Thailand" data-th="มหาวิทยาลัยพะเยา ประเทศไทย">University of Phayao, Thailand</p>
             </div>
           </aside>
         </div>
@@ -89,19 +95,23 @@
         <div class="hero-proof" data-aos="fade-up" data-aos-delay="180">
           <div>
             <strong>10+</strong>
-            <span>AI / Web / Data Projects</span>
+            <span data-en="AI / Web / Data Projects" data-th="โปรเจกต์ AI / Web / Data">AI / Web / Data Projects</span>
           </div>
           <div>
             <strong>2nd</strong>
-            <span>Beyond Coding Award</span>
+            <span data-en="Beyond Coding Award" data-th="รางวัล Beyond Coding">Beyond Coding Award</span>
           </div>
           <div>
             <strong>2 mo.</strong>
-            <span>Taiwan Research</span>
+            <span data-en="Taiwan Research" data-th="วิจัยที่ไต้หวัน">Taiwan Research</span>
           </div>
           <div>
             <strong>TA</strong>
-            <span>Data Science TA</span>
+            <span data-en="Data Science TA" data-th="ผู้ช่วยสอน Data Science">Data Science TA</span>
+          </div>
+          <div>
+            <strong>4x</strong>
+            <span data-en="Super AI Hackathons" data-th="Hackathon จาก Super AI">Super AI Hackathons</span>
           </div>
         </div>
       </div>
@@ -118,7 +128,7 @@
         <div class="row gy-4 align-items-stretch">
           <div class="col-lg-4">
             <div class="about-photo clean-photo">
-              <img src="assets/img/www.jpg" class="img-fluid" alt="Phisit Katongtung">
+              <img src="assets/img/1778346359836-0375e255-Phisit-Katongtung.jpg" class="img-fluid" alt="Phisit Katongtung">
             </div>
           </div>
 
@@ -160,39 +170,128 @@
 
     <section id="skills" class="skills section light-background">
       <div class="container section-title" data-aos="fade-up">
-        <span class="section-kicker">Capabilities</span>
-        <h2>Skills</h2>
+        <span class="section-kicker" data-en="Capabilities" data-th="ความสามารถ">Capabilities</span>
+        <h2 data-en="Technical Skills & Core Competencies" data-th="ทักษะเทคนิคและสมรรถนะหลัก">Technical Skills & Core Competencies</h2>
+        <p data-en="A focused overview of engineering, AI, analytics, automation, and communication strengths for AI product and research work." data-th="ภาพรวมทักษะด้านวิศวกรรม AI, การวิเคราะห์ข้อมูล, อัตโนมัติ และการสื่อสารสำหรับงานผลิตภัณฑ์และงานวิจัยด้าน AI">A focused overview of engineering, AI, analytics, automation, and communication strengths for AI product and research work.</p>
       </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row gy-4 skills-content">
-          <div class="col-lg-6">
-            <div class="skill-panel">
-              <div class="panel-heading">
-                <i class="bi bi-cpu"></i>
-                <h3>Technical Skills</h3>
-              </div>
-              <ul class="skill-list">
-                <li><span>Languages</span><strong>Python, JavaScript, SQL</strong></li>
-                <li><span>Frontend</span><strong>HTML, CSS, React, Bootstrap, Figma</strong></li>
-                <li><span>AI / ML</span><strong>Machine Learning, Deep Learning, ELM, CNN, YOLO, LLM</strong></li>
-                <li><span>Backend / Tools</span><strong>FastAPI, REST APIs, Git & GitHub, Roboflow, Tableau, Power BI</strong></li>
-              </ul>
-            </div>
+        <div class="skill-matrix">
+          <article class="skill-category">
+            <span data-en="Programming" data-th="ภาษาโปรแกรม">Programming</span>
+            <p>Python, SQL, JavaScript, HTML, CSS, TypeScript, React, Vue.js, Next.js</p>
+          </article>
+
+          <article class="skill-category">
+            <span data-en="AI & Machine Learning" data-th="AI และ Machine Learning">AI & Machine Learning</span>
+            <p>PyTorch, TensorFlow, Scikit-learn, Deep Learning, Computer Vision, CNN, YOLO, ViT, Transfer Learning, Model Fine-tuning, LLMs, Agentic AI</p>
+          </article>
+
+          <article class="skill-category">
+            <span data-en="Generative AI" data-th="Generative AI">Generative AI</span>
+            <p>Prompt Engineering, RAG, Embeddings, AI Agents, LLM Application Development</p>
+          </article>
+
+          <article class="skill-category">
+            <span data-en="Frontend Development" data-th="Frontend Development">Frontend Development</span>
+            <p>HTML, CSS, JavaScript, TypeScript, React, Vue.js, Next.js, Responsive Web Design, UI/UX Design, Wireframing, Prototyping, Figma</p>
+          </article>
+
+          <article class="skill-category">
+            <span data-en="Backend Development" data-th="Backend Development">Backend Development</span>
+            <p>FastAPI, Streamlit, REST APIs, API Integration</p>
+          </article>
+
+          <article class="skill-category">
+            <span data-en="Data & Analytics" data-th="ข้อมูลและการวิเคราะห์">Data & Analytics</span>
+            <p>Pandas, NumPy, Power BI, EDA, Feature Engineering</p>
+          </article>
+
+          <article class="skill-category">
+            <span data-en="AI Infrastructure" data-th="โครงสร้างพื้นฐาน AI">AI Infrastructure</span>
+            <p>LANTA Supercomputer, NVIDIA A100 GPUs, GPU Computing</p>
+          </article>
+
+          <article class="skill-category">
+            <span data-en="Automation & Workflow" data-th="Automation และ Workflow">Automation & Workflow</span>
+            <p>UiPath, n8n, OCR, Workflow Automation, Business Process Automation</p>
+          </article>
+
+          <article class="skill-category">
+            <span data-en="Tools & Platforms" data-th="เครื่องมือและแพลตฟอร์ม">Tools & Platforms</span>
+            <p>Git, GitHub, Jira, Roboflow</p>
+          </article>
+
+          <article class="skill-category">
+            <span data-en="Research & Engineering" data-th="งานวิจัยและวิศวกรรม">Research & Engineering</span>
+            <p>Medical AI, Healthcare Analytics, Model Evaluation, Experimental Design, AI Solution Architecture</p>
+          </article>
+        </div>
+
+        <div class="core-competency-panel">
+          <div class="panel-heading">
+            <i class="bi bi-person-check"></i>
+            <h3 data-en="Core Competencies" data-th="สมรรถนะหลัก">Core Competencies</h3>
+          </div>
+          <div class="competency-cloud">
+            <span data-en="Problem Solving" data-th="การแก้ปัญหา">Problem Solving</span>
+            <span data-en="Critical Thinking" data-th="การคิดเชิงวิเคราะห์">Critical Thinking</span>
+            <span data-en="Research & Innovation" data-th="การวิจัยและนวัตกรรม">Research & Innovation</span>
+            <span data-en="Technical Communication" data-th="การสื่อสารเชิงเทคนิค">Technical Communication</span>
+            <span data-en="Public Speaking & Presentation" data-th="การพูดและการนำเสนอ">Public Speaking & Presentation</span>
+            <span data-en="Leadership" data-th="ภาวะผู้นำ">Leadership</span>
+            <span data-en="Team Collaboration" data-th="การทำงานร่วมกับทีม">Team Collaboration</span>
+            <span data-en="Stakeholder Communication" data-th="การสื่อสารกับผู้เกี่ยวข้อง">Stakeholder Communication</span>
+            <span data-en="Project Ownership" data-th="ความรับผิดชอบต่อโปรเจกต์">Project Ownership</span>
+            <span data-en="Rapid Prototyping" data-th="การทำต้นแบบอย่างรวดเร็ว">Rapid Prototyping</span>
+            <span data-en="Adaptability" data-th="การปรับตัว">Adaptability</span>
+            <span data-en="Continuous Learning" data-th="การเรียนรู้อย่างต่อเนื่อง">Continuous Learning</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="credentials" class="credentials section">
+      <div class="container section-title" data-aos="fade-up">
+        <span class="section-kicker" data-en="Credential" data-th="หนังสือรับรอง">Credential</span>
+        <h2 data-en="Certificate of Competency" data-th="หนังสือรับรองสมรรถนะ">Certificate of Competency</h2>
+        <p data-en="Certified AI Literacy for Power Users by Thailand Professional Qualification Institute, with competency assessment jointly provided by Huawei Technologies (Thailand)." data-th="ได้รับหนังสือรับรองสมรรถนะด้าน AI Literacy for Power Users จากสถาบันคุณวุฒิวิชาชีพ โดยมีการประเมินสมรรถนะร่วมกับ Huawei Technologies (Thailand)">Certified AI Literacy for Power Users by Thailand Professional Qualification Institute, with competency assessment jointly provided by Huawei Technologies (Thailand).</p>
+      </div>
+
+      <div class="container">
+        <div class="credential-layout" data-aos="fade-up" data-aos-delay="100">
+          <div class="credential-image">
+            <img src="assets/img/tpqi-huawei-ai-literacy-competency.jpg" alt="TPQI Huawei AI Literacy Certificate of Competency">
           </div>
 
-          <div class="col-lg-6">
-            <div class="skill-panel accent-panel">
-              <div class="panel-heading">
-                <i class="bi bi-people"></i>
-                <h3>Soft Skills</h3>
+          <div class="credential-copy">
+            <span class="project-tag" data-en="TPQI x Huawei | Issued 28 May 2026" data-th="TPQI x Huawei | ออกให้วันที่ 28 พฤษภาคม 2569">TPQI x Huawei | Issued 28 May 2026</span>
+            <h3 data-en="AI Literacy for Power Users" data-th="AI Literacy for Power Users">AI Literacy for Power Users</h3>
+            <p data-en="This certificate recognizes competency based on the occupational standard for AI Literacy, covering practical AI understanding, model performance analysis, ethical limitations, AI policy awareness, and applying AI tools for work." data-th="หนังสือรับรองนี้แสดงสมรรถนะตามมาตรฐานอาชีพด้าน AI Literacy ครอบคลุมความเข้าใจพื้นฐานและเทคโนโลยี AI การวิเคราะห์ประสิทธิภาพโมเดล จริยธรรมและข้อจำกัด นโยบายที่เกี่ยวข้อง และการประยุกต์ใช้เครื่องมือ AI ในการทำงาน">This certificate recognizes competency based on the occupational standard for AI Literacy, covering practical AI understanding, model performance analysis, ethical limitations, AI policy awareness, and applying AI tools for work.</p>
+
+            <dl class="credential-meta">
+              <div>
+                <dt data-en="Sector" data-th="สาขาวิชาชีพ">Sector</dt>
+                <dd data-en="AI Literacy" data-th="AI Literacy">AI Literacy</dd>
               </div>
-              <ul class="skill-list">
-                <li><span>Collaboration</span><strong>Teamwork & Collaboration</strong></li>
-                <li><span>Thinking</span><strong>Problem Solving</strong></li>
-                <li><span>Communication</span><strong>Thai / English Communication</strong></li>
-                <li><span>Ownership</span><strong>Time Management and Responsibility</strong></li>
-              </ul>
+              <div>
+                <dt data-en="Level" data-th="ระดับ">Level</dt>
+                <dd data-en="AI Literacy for Power Users" data-th="สำหรับผู้ใช้งานทักษะสูง / AI Literacy for Power Users">AI Literacy for Power Users</dd>
+              </div>
+              <div>
+                <dt data-en="Certificate No." data-th="เลขที่หนังสือรับรอง">Certificate No.</dt>
+                <dd>OSCN-0012/AI-000-0000-A-26/041007</dd>
+              </div>
+            </dl>
+
+            <div class="competency-cloud compact-cloud">
+              <span data-en="Explain AI technologies" data-th="อธิบายเทคโนโลยี AI">Explain AI technologies</span>
+              <span data-en="Analyze model performance" data-th="วิเคราะห์ประสิทธิภาพโมเดล">Analyze model performance</span>
+              <span data-en="Recommend AI policies and standards" data-th="แนะนำนโยบาย กฎหมาย และมาตรฐาน AI">Recommend AI policies and standards</span>
+              <span data-en="Explain AI fundamentals and operations" data-th="อธิบายพื้นฐานและการทำงานของ AI">Explain AI fundamentals and operations</span>
+              <span data-en="Evaluate social and ethical impacts" data-th="ประเมินผลกระทบด้านสังคมและจริยธรรม">Evaluate social and ethical impacts</span>
+              <span data-en="Apply AI tools for work" data-th="ใช้เครื่องมือ AI เพื่อการทำงาน">Apply AI tools for work</span>
+              <span data-en="Develop technical AI skills" data-th="พัฒนาทักษะเทคนิคด้าน AI">Develop technical AI skills</span>
             </div>
           </div>
         </div>
@@ -284,15 +383,155 @@
       </div>
     </section>
 
+    <section id="ai-camp" class="ai-camp section light-background">
+      <div class="container section-title" data-aos="fade-up">
+        <span class="section-kicker">Competitive AI</span>
+        <h2>Super AI Engineer Season 6</h2>
+        <p>One-month onsite intensive AI engineering camp with competitive hackathons, real-world problem solving, model experimentation, solution architecture, and technical pitching under pressure.</p>
+      </div>
+
+      <div class="container">
+        <div class="ai-camp-spotlight" data-aos="fade-up" data-aos-delay="100">
+          <div class="ai-camp-media">
+            <img src="assets/img/super-ai-onsite-team.jpg" alt="Super AI Engineer onsite intensive camp team photo">
+          </div>
+
+          <div class="ai-camp-copy">
+            <span class="project-tag">Onsite Intensive AI Camp | 1 Month</span>
+            <h3>Built practical AI solutions across four competitive hackathon tracks.</h3>
+            <p>Completed a one-month onsite intensive AI engineering camp focused on solving real-world AI challenges through hands-on project development, rapid prototyping, and team-based competitive hackathons.</p>
+
+            <div class="ai-camp-metrics">
+              <div>
+                <strong>4</strong>
+                <span>Hackathon Tracks</span>
+              </div>
+              <div>
+                <strong>4</strong>
+                <span>Team Awards</span>
+              </div>
+              <div>
+                <strong>1 mo.</strong>
+                <span>Onsite Practice</span>
+              </div>
+              <div>
+                <strong>1st RU</strong>
+                <span>Edge AI Transport</span>
+              </div>
+            </div>
+
+            <div class="ai-camp-tags" aria-label="AI camp focus areas">
+              <span>Tabular Data</span>
+              <span>Computer Vision</span>
+              <span>IoT</span>
+              <span>Agentic AI</span>
+              <span>OCR</span>
+              <span>RAG</span>
+              <span>EDA</span>
+              <span>Pitching</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="ai-camp-grid" data-aos="fade-up" data-aos-delay="160">
+          <article class="ai-camp-card highlight-card">
+            <i class="bi bi-lightning-charge"></i>
+            <h3>Role & Technical Contribution</h3>
+            <p>Contributed to model development, data analysis, experimentation, solution architecture, and AI workflow design while supporting project presentation, technical explanation, and pitching to judges and mentors.</p>
+          </article>
+
+          <article class="ai-camp-card">
+            <i class="bi bi-diagram-3"></i>
+            <h3>Hackathon Tracks</h3>
+            <ul>
+              <li>Tabular Data: analysis, insight extraction, and EDA workflows.</li>
+              <li>Computer Vision and OCR: document understanding and model evaluation.</li>
+              <li>IoT and Edge AI: practical system design for intelligent transportation.</li>
+              <li>Agentic AI and RAG: retrieval, pipeline design, and AI agent workflows.</li>
+            </ul>
+          </article>
+
+          <article class="ai-camp-card">
+            <i class="bi bi-award"></i>
+            <h3>Awards & Recognition</h3>
+            <ul>
+              <li>Honor, Second Runner-up, Honor, and Second Runner-up across four onsite hackathons.</li>
+              <li>First Runner-up, Hackathon Edge AI for Intelligent Transportation.</li>
+              <li>Worked with organizations including NT, AIAT, and NB Espresso Hackathon.</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="hackathon-track-grid" data-aos="fade-up" data-aos-delay="220">
+          <article class="track-card">
+            <span>EDA</span>
+            <h3>AI Online Hackathon: From Data to Insight</h3>
+            <p>Completed under Super AI Engineer Season 6, certified by AIAT. Strengthened data analysis, insight extraction, analytical thinking, and practical AI problem solving for digital industry challenges.</p>
+          </article>
+
+          <article class="track-card">
+            <span>Agentic OCR</span>
+            <h3>2026 Thai Election OCR Challenge</h3>
+            <p>Built understanding of OCR, agentic AI workflows, data extraction, and pipeline design for real-world document understanding tasks under hackathon conditions.</p>
+          </article>
+
+          <article class="track-card">
+            <span>RAG</span>
+            <h3>FahMai RAG Hackathon</h3>
+            <p>Practiced Retrieval-Augmented Generation, document retrieval, context-aware answer improvement, and AI agent workflow design for real-world knowledge tasks.</p>
+          </article>
+
+          <article class="track-card">
+            <span>Theory</span>
+            <h3>Foundation AI Examination</h3>
+            <p>Passed the Foundation AI Theory level covering 13 courses including Python, ML, Deep Learning, Computer Vision, NLP, RAG, AI Ethics, and AI for Digital Business.</p>
+          </article>
+        </div>
+
+        <div class="ai-camp-proof" data-aos="fade-up" data-aos-delay="260">
+          <figure>
+            <img src="assets/img/super-ai-edge-ai-award.jpg" alt="First runner-up Edge AI for Intelligent Transportation award">
+            <figcaption>First Runner-up, Edge AI for Intelligent Transportation</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/img/cert-data-to-insight.jpg" alt="AI Online Hackathon From Data to Insight certificate">
+            <figcaption>From Data to Insight Certificate</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/img/cert-agentic-pipeline-ocr.jpg" alt="Agentic Pipeline OCR Challenge certificate">
+            <figcaption>Agentic Pipeline OCR Certificate</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/img/cert-foundation-ai-theory.jpg" alt="Foundation AI Theory certificate">
+            <figcaption>Foundation AI Theory Certificate</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
     <section id="projects" class="projects section light-background">
       <div class="container section-title" data-aos="fade-up">
-        <span class="section-kicker">Work Samples</span>
-        <h2>Selected Projects</h2>
-        <p>Complete project list from the original resume, rewritten into clear cards with scope, tools, and outcomes.</p>
+        <span class="section-kicker" data-en="Work Samples" data-th="ตัวอย่างผลงาน">Work Samples</span>
+        <h2 data-en="Selected Projects" data-th="โปรเจกต์ที่คัดเลือก">Selected Projects</h2>
+        <p data-en="Complete project list from the original resume, rewritten into clear cards with scope, tools, outcomes, and published research evidence." data-th="รวมโปรเจกต์สำคัญจากเรซูเม่ จัดใหม่เป็นการ์ดที่เห็นขอบเขตงาน เครื่องมือ ผลลัพธ์ และหลักฐานงานวิจัยที่ตีพิมพ์แล้ว">Complete project list from the original resume, rewritten into clear cards with scope, tools, outcomes, and published research evidence.</p>
       </div>
 
       <div class="container">
         <div class="project-grid" data-aos="fade-up" data-aos-delay="100">
+          <article class="project-card featured-project publication-project">
+            <span class="project-tag" data-en="Published Research" data-th="งานวิจัยตีพิมพ์">Published Research</span>
+            <h3>MRI-Based Bladder Cancer Staging via YOLOv11 Segmentation and Deep Learning Classification</h3>
+            <p data-en="Automated MRI-based deep learning framework for improving bladder cancer staging consistency, especially for distinguishing non-muscle-invasive disease from muscle-invasive cancer." data-th="กรอบงาน deep learning จากภาพ MRI สำหรับช่วยเพิ่มความสม่ำเสมอในการ staging มะเร็งกระเพาะปัสสาวะ โดยเฉพาะการแยกระหว่าง non-muscle-invasive และ muscle-invasive cancer">Automated MRI-based deep learning framework for improving bladder cancer staging consistency, especially for distinguishing non-muscle-invasive disease from muscle-invasive cancer.</p>
+            <ul>
+              <li data-en="Combined YOLOv11 for tumor detection, DeepLabV3 for segmentation refinement, and VGG19, ResNet50, and Vision Transformer for stage prediction." data-th="ใช้ YOLOv11 สำหรับตรวจจับก้อนมะเร็ง, DeepLabV3 เพื่อปรับปรุง segmentation และใช้ VGG19, ResNet50, Vision Transformer สำหรับทำนาย stage">Combined YOLOv11 for tumor detection, DeepLabV3 for segmentation refinement, and VGG19, ResNet50, and Vision Transformer for stage prediction.</li>
+              <li data-en="Evaluated 416 T2-weighted MRI images labeled T1 to T4 with classification metrics and bootstrap confidence intervals." data-th="ประเมินผลจากภาพ MRI แบบ T2-weighted จำนวน 416 ภาพที่ติดป้าย T1 ถึง T4 ด้วย classification metrics และ bootstrap confidence intervals">Evaluated 416 T2-weighted MRI images labeled T1 to T4 with classification metrics and bootstrap confidence intervals.</li>
+              <li data-en="Results showed strong performance for separating non-muscle-invasive from muscle-invasive cases, supporting more standardized MRI-based staging research." data-th="ผลลัพธ์แสดงประสิทธิภาพที่ดีในการแยกเคส non-muscle-invasive และ muscle-invasive ช่วยสนับสนุนแนวทาง staging จาก MRI ให้เป็นมาตรฐานมากขึ้น">Results showed strong performance for separating non-muscle-invasive from muscle-invasive cases, supporting more standardized MRI-based staging research.</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://www.mdpi.com/2079-9721/14/2/45" target="_blank" rel="noopener noreferrer"><i class="bi bi-journal-text"></i><span data-en="Read Published Paper" data-th="อ่านบทความที่ตีพิมพ์">Read Published Paper</span></a>
+            </div>
+          </article>
+
           <article class="project-card featured-project">
             <span class="project-tag">Medical AI</span>
             <h3>RSNA Lumbar Spine Degenerative Classification</h3>
@@ -371,21 +610,122 @@
 
     <section id="portfolio" class="portfolio section">
       <div class="container section-title" data-aos="fade-up">
-        <span class="section-kicker">Evidence</span>
-        <h2>Portfolio Gallery</h2>
-        <p>Certificates, activities, web applications, Streamlit apps, workshops, and research-related work.</p>
+        <span class="section-kicker" data-en="Evidence" data-th="หลักฐานผลงาน">Evidence</span>
+        <h2 data-en="Portfolio Gallery" data-th="แกลเลอรีผลงาน">Portfolio Gallery</h2>
+        <p data-en="Certificates, activities, web applications, Streamlit apps, workshops, and research-related work." data-th="รวมใบประกาศ กิจกรรม เว็บแอป Streamlit เวิร์กช็อป และผลงานวิจัยที่เกี่ยวข้อง">Certificates, activities, web applications, Streamlit apps, workshops, and research-related work.</p>
       </div>
 
       <div class="container">
         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
           <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-training">Training & Activities</li>
-            <li data-filter=".filter-web">Web Applications</li>
-            <li data-filter=".filter-streamlit">Streamlit Projects</li>
+            <li data-filter="*" class="filter-active" data-en="All" data-th="ทั้งหมด">All</li>
+            <li data-filter=".filter-training" data-en="Training & Activities" data-th="อบรมและกิจกรรม">Training & Activities</li>
+            <li data-filter=".filter-ai-camp" data-en="AI Camp" data-th="AI Camp">AI Camp</li>
+            <li data-filter=".filter-certification" data-en="Certifications" data-th="ใบรับรอง">Certifications</li>
+            <li data-filter=".filter-web" data-en="Web Applications" data-th="เว็บแอป">Web Applications</li>
+            <li data-filter=".filter-streamlit" data-en="Streamlit Projects" data-th="โปรเจกต์ Streamlit">Streamlit Projects</li>
           </ul>
 
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-certification">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/tpqi-huawei-ai-literacy-competency.jpg" class="img-fluid" alt="TPQI Huawei AI Literacy Certificate of Competency">
+                <div class="portfolio-info">
+                  <h4>AI Literacy Competency</h4>
+                  <p>TPQI and Huawei Certificate of Competency for AI Literacy for Power Users.</p>
+                  <a href="assets/img/tpqi-huawei-ai-literacy-competency.jpg" title="Certificate of Competency: AI Literacy for Power Users" data-gallery="portfolio-gallery-certification" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ai-camp">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/super-ai-onsite-team.jpg" class="img-fluid" alt="Super AI Engineer onsite intensive camp">
+                <div class="portfolio-info">
+                  <h4>Super AI Onsite Camp</h4>
+                  <p>One-month onsite intensive AI engineering camp with hackathon-based practice.</p>
+                  <a href="assets/img/super-ai-onsite-team.jpg" title="Super AI Onsite Intensive Camp" data-gallery="portfolio-gallery-ai-camp" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ai-camp">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/super-ai-edge-ai-award.jpg" class="img-fluid" alt="Edge AI intelligent transportation first runner-up award">
+                <div class="portfolio-info">
+                  <h4>Edge AI Award</h4>
+                  <p>First runner-up for an Edge AI intelligent transportation hackathon solution.</p>
+                  <a href="assets/img/super-ai-edge-ai-award.jpg" title="First Runner-up, Edge AI for Intelligent Transportation" data-gallery="portfolio-gallery-ai-camp" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ai-camp">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/super-ai-fahmai-award.jpg" class="img-fluid" alt="FahMai hackathon second runner-up award">
+                <div class="portfolio-info">
+                  <h4>FahMai Hackathon</h4>
+                  <p>Second runner-up result from the FahMai hackathon track.</p>
+                  <a href="assets/img/super-ai-fahmai-award.jpg" title="FahMai Hackathon Award" data-gallery="portfolio-gallery-ai-camp" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ai-camp">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/super-ai-group-hackathon.jpg" class="img-fluid" alt="Super AI hackathon group photo">
+                <div class="portfolio-info">
+                  <h4>Hackathon Teamwork</h4>
+                  <p>Team-based competitive AI development under time constraints.</p>
+                  <a href="assets/img/super-ai-group-hackathon.jpg" title="Super AI Hackathon Teamwork" data-gallery="portfolio-gallery-ai-camp" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ai-camp">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/cert-data-to-insight.jpg" class="img-fluid" alt="From Data to Insight certificate">
+                <div class="portfolio-info">
+                  <h4>Data to Insight</h4>
+                  <p>AI Online Hackathon certificate focused on EDA and insight extraction.</p>
+                  <a href="assets/img/cert-data-to-insight.jpg" title="AI Online Hackathon: From Data to Insight" data-gallery="portfolio-gallery-ai-camp" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ai-camp">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/cert-agentic-pipeline-ocr.jpg" class="img-fluid" alt="Agentic Pipeline OCR certificate">
+                <div class="portfolio-info">
+                  <h4>Agentic OCR</h4>
+                  <p>Agentic Pipeline OCR challenge certificate for document understanding practice.</p>
+                  <a href="assets/img/cert-agentic-pipeline-ocr.jpg" title="Agentic Pipeline OCR Challenge" data-gallery="portfolio-gallery-ai-camp" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ai-camp">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/cert-fahmai-rag.jpg" class="img-fluid" alt="FahMai RAG Hackathon certificate">
+                <div class="portfolio-info">
+                  <h4>FahMai RAG</h4>
+                  <p>RAG hackathon certificate focused on retrieval and context-aware AI answers.</p>
+                  <a href="assets/img/cert-fahmai-rag.jpg" title="FahMai RAG Hackathon" data-gallery="portfolio-gallery-ai-camp" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ai-camp">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/cert-foundation-ai-theory.jpg" class="img-fluid" alt="Foundation AI Theory certificate">
+                <div class="portfolio-info">
+                  <h4>Foundation AI</h4>
+                  <p>Foundation AI Theory certificate covering 13 AI-related courses.</p>
+                  <a href="assets/img/cert-foundation-ai-theory.jpg" title="Foundation AI Theory" data-gallery="portfolio-gallery-ai-camp" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+              </div>
+            </div>
+
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-training">
               <div class="portfolio-content h-100">
                 <img src="assets/img/wew.jpg" class="img-fluid" alt="Beyond Coding award">
@@ -609,7 +949,7 @@
     <div class="container footer-inner">
       <div>
         <h2>Phisit Katongtung</h2>
-        <p>AI Engineer & Web Developer based in Phayao, Thailand.</p>
+        <p data-en="AI Engineer & Web Developer based in Phayao, Thailand." data-th="AI Engineer & Web Developer จากจังหวัดพะเยา ประเทศไทย">AI Engineer & Web Developer based in Phayao, Thailand.</p>
       </div>
       <div class="footer-actions">
         <a href="mailto:phisitkatongtung@gmail.com"><i class="bi bi-envelope"></i> Email</a>

@@ -2796,6 +2796,38 @@ section,
   background-clip: initial;
 }
 
+.hr-page .language-switch {
+  position: fixed;
+  top: 18px;
+  right: 22px;
+  z-index: 10000;
+  display: inline-flex;
+  gap: 4px;
+  padding: 4px;
+  border: 1px solid rgba(16, 183, 168, 0.24);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 16px 38px rgba(20, 32, 51, 0.14);
+  backdrop-filter: blur(12px);
+}
+
+.hr-page .language-switch button {
+  min-width: 42px;
+  min-height: 34px;
+  border: 0;
+  border-radius: 6px;
+  color: var(--hr-muted);
+  background: transparent;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.hr-page .language-switch button.is-active,
+.hr-page .language-switch button:hover {
+  color: #ffffff;
+  background: var(--hr-teal);
+}
+
 .hr-page .navmenu a,
 .hr-page .navmenu a:focus {
   border-radius: 8px;
@@ -2955,7 +2987,7 @@ section,
   position: relative;
   z-index: 3;
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 12px;
   margin-top: 34px;
 }
@@ -3010,6 +3042,7 @@ section,
 
 .hr-page .about.section,
 .hr-page .resume.section,
+.hr-page .credentials.section,
 .hr-page .portfolio.section {
   background: var(--hr-bg);
 }
@@ -3093,6 +3126,139 @@ section,
   border-top: 4px solid var(--hr-teal);
 }
 
+.hr-page .skill-matrix {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.hr-page .skill-category {
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid var(--hr-line);
+  background: #ffffff;
+  box-shadow: 0 14px 36px rgba(20, 32, 51, 0.07);
+}
+
+.hr-page .skill-category span {
+  display: inline-flex;
+  margin-bottom: 10px;
+  padding: 6px 9px;
+  border-radius: 8px;
+  color: #087a70;
+  background: rgba(16, 183, 168, 0.1);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.hr-page .skill-category p {
+  margin: 0;
+  color: var(--hr-ink);
+  font-size: 14px;
+  font-weight: 650;
+  line-height: 1.65;
+}
+
+.hr-page .core-competency-panel {
+  margin-top: 18px;
+  padding: 24px;
+  border-radius: 8px;
+  border: 1px solid var(--hr-line);
+  background:
+    linear-gradient(135deg, rgba(16, 183, 168, 0.08), rgba(255, 107, 74, 0.06)),
+    #ffffff;
+  box-shadow: 0 18px 46px rgba(20, 32, 51, 0.08);
+}
+
+.hr-page .competency-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-top: 16px;
+}
+
+.hr-page .competency-cloud span {
+  padding: 8px 10px;
+  border-radius: 8px;
+  color: var(--hr-ink);
+  background: #ffffff;
+  border: 1px solid rgba(16, 183, 168, 0.18);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.hr-page .credential-layout {
+  display: grid;
+  grid-template-columns: minmax(320px, 0.74fr) minmax(0, 1fr);
+  gap: 24px;
+  align-items: stretch;
+  padding: 18px;
+  border-radius: 8px;
+  border: 1px solid var(--hr-line);
+  background: #ffffff;
+  box-shadow: 0 22px 58px rgba(20, 32, 51, 0.1);
+}
+
+.hr-page .credential-image img {
+  width: 100%;
+  height: 100%;
+  max-height: 720px;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: 8px;
+}
+
+.hr-page .credential-copy {
+  align-self: center;
+  padding: 24px;
+}
+
+.hr-page .credential-copy h3 {
+  margin: 0 0 12px;
+  color: var(--hr-ink);
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 800;
+}
+
+.hr-page .credential-copy p {
+  color: var(--hr-muted);
+}
+
+.hr-page .credential-meta {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin: 22px 0 0;
+}
+
+.hr-page .credential-meta div {
+  padding: 14px;
+  border-radius: 8px;
+  background: rgba(16, 183, 168, 0.08);
+  border: 1px solid rgba(16, 183, 168, 0.16);
+}
+
+.hr-page .credential-meta dt {
+  color: #087a70;
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.hr-page .credential-meta dd {
+  margin: 6px 0 0;
+  color: var(--hr-ink);
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+
+.hr-page .compact-cloud span {
+  background: rgba(16, 183, 168, 0.08);
+}
+
 .hr-page .accent-panel {
   border-top-color: var(--hr-coral);
 }
@@ -3139,6 +3305,209 @@ section,
   gap: 18px;
 }
 
+.hr-page .ai-camp.section {
+  background:
+    linear-gradient(180deg, #ffffff 0%, #f6f8fb 100%);
+}
+
+.hr-page .ai-camp-spotlight {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(360px, 0.95fr);
+  gap: 24px;
+  align-items: stretch;
+  padding: 18px;
+  border-radius: 8px;
+  border: 1px solid var(--hr-line);
+  background: #ffffff;
+  box-shadow: 0 22px 58px rgba(20, 32, 51, 0.1);
+}
+
+.hr-page .ai-camp-media img {
+  width: 100%;
+  height: 100%;
+  min-height: 420px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.hr-page .ai-camp-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 24px;
+}
+
+.hr-page .ai-camp-copy h3 {
+  margin: 0 0 14px;
+  color: var(--hr-ink);
+  font-size: 31px;
+  line-height: 1.18;
+  font-weight: 800;
+}
+
+.hr-page .ai-camp-copy p,
+.hr-page .ai-camp-card p,
+.hr-page .ai-camp-card li,
+.hr-page .track-card p {
+  color: var(--hr-muted);
+}
+
+.hr-page .ai-camp-metrics {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.hr-page .ai-camp-metrics div,
+.hr-page .ai-camp-card,
+.hr-page .track-card,
+.hr-page .ai-camp-proof figure {
+  border-radius: 8px;
+  border: 1px solid var(--hr-line);
+  background: var(--hr-panel);
+  box-shadow: 0 14px 36px rgba(20, 32, 51, 0.07);
+}
+
+.hr-page .ai-camp-metrics div {
+  padding: 14px;
+}
+
+.hr-page .ai-camp-metrics strong {
+  display: block;
+  color: var(--hr-teal);
+  font-size: 25px;
+  line-height: 1;
+  font-weight: 800;
+}
+
+.hr-page .ai-camp-metrics span {
+  display: block;
+  margin-top: 8px;
+  color: var(--hr-muted);
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.hr-page .ai-camp-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.hr-page .ai-camp-tags span {
+  padding: 7px 10px;
+  border-radius: 8px;
+  color: #0c766e;
+  background: rgba(16, 183, 168, 0.1);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.hr-page .ai-camp-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr 1fr;
+  gap: 18px;
+  margin-top: 22px;
+}
+
+.hr-page .ai-camp-card {
+  padding: 24px;
+  border-top: 4px solid var(--hr-teal);
+}
+
+.hr-page .ai-camp-card.highlight-card {
+  border-top-color: var(--hr-coral);
+  background:
+    linear-gradient(135deg, rgba(255, 107, 74, 0.1), rgba(16, 183, 168, 0.08)),
+    #ffffff;
+}
+
+.hr-page .ai-camp-card i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  color: #ffffff;
+  background: var(--hr-teal);
+  font-size: 20px;
+}
+
+.hr-page .ai-camp-card.highlight-card i {
+  background: var(--hr-coral);
+}
+
+.hr-page .ai-camp-card h3,
+.hr-page .track-card h3 {
+  margin: 0 0 10px;
+  color: var(--hr-ink);
+  font-size: 19px;
+  font-weight: 800;
+}
+
+.hr-page .ai-camp-card ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.hr-page .ai-camp-card li {
+  padding-bottom: 8px;
+}
+
+.hr-page .hackathon-track-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 22px;
+}
+
+.hr-page .track-card {
+  padding: 20px;
+}
+
+.hr-page .track-card span {
+  display: inline-flex;
+  margin-bottom: 12px;
+  padding: 6px 9px;
+  border-radius: 8px;
+  color: #ffffff;
+  background: var(--hr-navy);
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.hr-page .ai-camp-proof {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 22px;
+}
+
+.hr-page .ai-camp-proof figure {
+  margin: 0;
+  overflow: hidden;
+}
+
+.hr-page .ai-camp-proof img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.hr-page .ai-camp-proof figcaption {
+  padding: 14px;
+  color: var(--hr-ink);
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
 .hr-page .project-card {
   padding: 24px;
   transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
@@ -3158,6 +3527,10 @@ section,
   background:
     linear-gradient(135deg, rgba(16, 183, 168, 0.12), rgba(255, 107, 74, 0.08)),
     #ffffff;
+}
+
+.hr-page .publication-project {
+  border-top: 4px solid var(--hr-coral);
 }
 
 .hr-page .project-tag {
@@ -3190,6 +3563,31 @@ section,
 
 .hr-page .project-card li {
   padding-bottom: 8px;
+}
+
+.hr-page .project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.hr-page .project-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 42px;
+  padding: 10px 13px;
+  border-radius: 8px;
+  color: #ffffff;
+  background: var(--hr-navy);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.hr-page .project-links a:hover {
+  color: #ffffff;
+  background: var(--hr-teal);
 }
 
 .hr-page .portfolio .portfolio-filters {
@@ -3292,6 +3690,26 @@ section,
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .hr-page .ai-camp-spotlight,
+  .hr-page .ai-camp-grid,
+  .hr-page .credential-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .hr-page .credential-image img {
+    max-height: 520px;
+  }
+
+  .hr-page .ai-camp-media img {
+    min-height: 320px;
+    aspect-ratio: 16 / 9;
+  }
+
+  .hr-page .hackathon-track-grid,
+  .hr-page .ai-camp-proof {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .hr-page .featured-project {
     grid-column: span 2;
   }
@@ -3329,6 +3747,25 @@ section,
     gap: 10px;
   }
 
+  .hr-page .ai-camp-copy {
+    padding: 8px 2px 4px;
+  }
+
+  .hr-page .ai-camp-copy h3 {
+    font-size: 25px;
+  }
+
+  .hr-page .ai-camp-metrics,
+  .hr-page .hackathon-track-grid,
+  .hr-page .ai-camp-proof,
+  .hr-page .credential-meta {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .hr-page .skill-matrix {
+    grid-template-columns: 1fr;
+  }
+
   .hr-page .featured-project {
     grid-column: span 1;
   }
@@ -3341,6 +3778,11 @@ section,
 @media (max-width: 575px) {
   .hr-page .resume-hero {
     padding: 88px 0 36px;
+  }
+
+  .hr-page .language-switch {
+    top: 15px;
+    right: 64px;
   }
 
   .hr-page .hero .container,
@@ -3399,6 +3841,41 @@ section,
 
   .hr-page .hero-proof {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .hr-page .ai-camp-spotlight {
+    padding: 12px;
+  }
+
+  .hr-page .ai-camp-media img {
+    min-height: 0;
+    aspect-ratio: 4 / 3;
+  }
+
+  .hr-page .ai-camp-copy h3 {
+    font-size: 23px;
+  }
+
+  .hr-page .ai-camp-metrics,
+  .hr-page .hackathon-track-grid,
+  .hr-page .ai-camp-proof,
+  .hr-page .credential-meta {
+    grid-template-columns: 1fr;
+  }
+
+  .hr-page .ai-camp-card,
+  .hr-page .track-card,
+  .hr-page .credential-copy,
+  .hr-page .core-competency-panel {
+    padding: 18px;
+  }
+
+  .hr-page .credential-layout {
+    padding: 12px;
+  }
+
+  .hr-page .credential-copy h3 {
+    font-size: 24px;
   }
 
   .hr-page .hero-proof div {
